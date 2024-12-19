@@ -1,0 +1,78 @@
+body {
+    font-family: "Silkscreen", 'Courier New', Courier, monospace;
+}
+
+.navbar .nav-item:hover {
+    background-color: lightgray;
+    border-radius: 20px;
+}
+
+header {
+    background-image: linear-gradient(#baacfa, white);
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    text-align: center;
+}
+
+.about-me {
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Arial', sans-serif;
+}
+
+h2, h3 {
+    color: blue;
+}
+
+header h2 {
+    font-size: small;
+    color: darkblue;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+ul {
+    margin: 0 35px;
+}
+
+.content {
+    padding: 20px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.content-mid {
+    padding: 20px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.content:hover {
+    border-bottom: 1px solid;
+    border-left: 1px solid;
+    border-radius: 15px;
+    background-image: linear-gradient(to bottom left, #baacfa, white, white);
+}
+
+.content-mid:hover {
+    border-left: none;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    border-radius: 15px;
+    background-image: linear-gradient(to bottom right, #baacfa, white, white);
+}
+
+li:hover {
+    background-color: lightgray;
+}
+
+footer {
+    background-image: linear-gradient(to top, #baacfa, white);
+    padding: 25px 0;
+}
+
+
