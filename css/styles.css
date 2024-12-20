@@ -1,6 +1,7 @@
 /* Default light mode styles */
 body {
     font-family: "Silkscreen", 'Courier New', Courier, monospace;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .navbar .nav-item:hover {
@@ -81,58 +82,4 @@ footer {
 
 .footer-light {
     background-image: linear-gradient(to top, #baacfa, white);
-}
-
-/* Dark mode styles */
-body.dark-mode {
-    background: #4a3f83;
-    color: white;
-}
-
-body.dark-mode .list-group-item {
-    background-color: #444;
-    color: white;
-}
-
-body.dark-mode .list-group-item:hover {
-    background-color: #c5bebe;
-}
-
-body.dark-mode .content {
-    color: white;
-}
-
-body.dark-mode .content:hover {
-    background-image: linear-gradient(to bottom left, #444, #121212, #121212);
-}
-
-body.dark-mode .content-mid:hover {
-    background-image: linear-gradient(to bottom right, #444, #121212, #121212);
-}
-
-body.dark-mode h1, body.dark-mode h2, body.dark-mode h3, body.dark-mode h4, body.dark-mode h5, body.dark-mode h6 {
-    color: #f1f1f1;
-}
-
-body.dark-mode p {
-    color: #ccc;
-}
-
-/* Positioning for the light/dark mode toggle icon */
-#theme-toggle {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    z-index: 999;
-    cursor: pointer;
-}
-
-/* Dark Mode Header and Footer */
-.header-dark {
-    background-image: linear-gradient(to top, #4a3f83, #2e2b47);
-    color: #f1f1f1;
-}
-
-.footer-dark {
-    background-image: linear-gradient(to bottom, #4a3f83, #2e2b47);
 }
