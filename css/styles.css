@@ -1,5 +1,6 @@
 /* Default light mode styles */
 body {
+    background-color: #f4f2fb;
     font-family: "Silkscreen", 'Courier New', Courier, monospace;
     transition: background-color 0.3s, color 0.3s;
 }
@@ -16,7 +17,7 @@ header {
 }
 
 .header-light {
-    background-image: linear-gradient(#baacfa, white);
+    background-image: linear-gradient(#baacfa, #f4f2fb);
     color: rgb(0, 0, 0);
 }
 
@@ -61,7 +62,7 @@ ul {
     border-bottom: 1px solid;
     border-left: 1px solid;
     border-radius: 15px;
-    background-image: linear-gradient(to bottom left, #baacfa, white, white);
+    background-image: linear-gradient(to bottom left, #baacfa,  #f4f2fb, #f4f2fb);
 }
 
 .content-mid:hover {
@@ -69,7 +70,7 @@ ul {
     border-right: 1px solid;
     border-bottom: 1px solid;
     border-radius: 15px;
-    background-image: linear-gradient(to bottom right, #baacfa, white, white);
+    background-image: linear-gradient(to bottom right, #baacfa, #f4f2fb, #f4f2fb);
 }
 
 li:hover {
@@ -81,5 +82,5 @@ footer {
 }
 
 .footer-light {
-    background-image: linear-gradient(to top, #baacfa, white);
+    background-image: linear-gradient(to top, #baacfa, #f4f2fb);
 }
