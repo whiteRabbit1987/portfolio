@@ -1,15 +1,10 @@
-/* Default light mode styles */
 body {
     background-color: #f4f2fb;
     font-family: "Silkscreen", 'Courier New', Courier, monospace;
     transition: background-color 0.3s, color 0.3s;
 }
 
-.navbar .nav-item:hover {
-    background-color: lightgray;
-    border-radius: 20px;
-}
-
+/* Header Styles */
 header {
     color: rgb(0, 0, 0);
     padding: 10px;
@@ -21,8 +16,9 @@ header {
     color: rgb(0, 0, 0);
 }
 
-.about-me {
-    text-align: center;
+.bunny {
+    max-width: 25%;
+    max-height: auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -38,31 +34,27 @@ header h2 {
     color: blue;
 }
 
-p {
-    font-family: 'Courier New', Courier, monospace;
+/* Navbar */
+.navbar .nav-item:hover {
+    background-color: lightgray;
+    border-radius: 20px;
 }
 
-ul {
-    margin: 0 35px;
-}
-
-.content {
+/* Content Sections */
+.content,
+.content-mid,
+.content-dif {
     padding: 20px;
     margin: 20px;
-    cursor: pointer;
 }
 
-.content-mid {
-    padding: 20px;
-    margin: 20px;
-    cursor: pointer;
-}
 
 .content:hover {
     border-bottom: 1px solid;
     border-left: 1px solid;
     border-radius: 15px;
-    background-image: linear-gradient(to bottom left, #baacfa,  #f4f2fb, #f4f2fb);
+    background-image: linear-gradient(to bottom left, #baacfa, #f4f2fb, #f4f2fb);
+    cursor: pointer;
 }
 
 .content-mid:hover {
@@ -71,12 +63,29 @@ ul {
     border-bottom: 1px solid;
     border-radius: 15px;
     background-image: linear-gradient(to bottom right, #baacfa, #f4f2fb, #f4f2fb);
+    cursor: pointer;
+}
+
+/* Lists */
+ul {
+    margin: 0 35px;
 }
 
 li:hover {
     background-color: lightgray;
 }
 
+/* General Styles */
+p {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Miscellaneous */
+.about-me {
+    text-align: center;
+}
+
+/* Footer */
 footer {
     padding: 25px 0;
 }

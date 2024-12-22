@@ -22,40 +22,47 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <title>Software Developer Portfolio</title>
+    <link rel="icon" href="images/bunny.png" type="image/png">
 </head>
 
 <body>
     <header class="header-light header-dark">
-            <!--Ribbon-->
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <h1>Software Developer Portfolio</h1>
-                        <h2>Abbott Phillip S</h2>
-                    </div>
+        <!--Ribbon-->
+        <div class="container">
+            <div class="row">
+                <!-- <a href="index.html">
+					<div class="col-4 col-sm-3 col-md-2 align-self-center">
+						<img src="images/bunny.png" class="image-fluid bunny">
+					</div>
+				</a> -->
+                <div class="col">
+                    <h1>Software Developer Portfolio</h1>
+                    <h2>Abbott Phillip S</h2>
                 </div>
             </div>
+        </div>
 
-            <!-- navbar -->
-            <nav class="navbar navbar-expand-sm navbar-light sticky-top">
-                <div class="container">
-                    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#myNavbar">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="myNavbar">
-                        <ul class="navbar-nav">
-                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link active" href="#">About</a></li>
-                            <li class="nav-item"><a class="nav-link" href="sites.html">Sites</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                        </ul>
-                    </div>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-sm navbar-light sticky-top">
+            <div class="container">
+                <a href="index.html" class="navbar-brand"><img src="images/bunny.png" height="30" width="30"></a>
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#myNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="#">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sites.html">Sites</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
                 </div>
-            </nav>
-            
-		   <!-- Dark/Light Mode Toggle Icon (Top Right Corner) -->
-		   <button id="theme-toggle" class="btn btn-outline-secondary position-absolute top-0 end-0 m-3">
+            </div>
+        </nav>
+
+        <!-- Dark/Light Mode Toggle Icon (Top Right Corner) -->
+        <button id="theme-toggle" class="btn btn-outline-secondary position-absolute top-0 end-0 m-3">
             <i id="theme-icon" class="fa-solid fa-sun"></i>
         </button>
     </header>
@@ -73,25 +80,8 @@
             </div>
         </div>
 
-        <!-- Mission Section -->
-        <section class="row">
-            <div>
-                <h3>My Mission</h3>
-                <p class="d-none d-sm-block">
-                    I am an active-duty US Navy servicemember with a solid foundation in electrical, technical, and
-                    security systems. Having recently completed my
-                    Associate of Applied Science (AAS) in Information Technology at Del Mar College, I have shifted my
-                    career focus toward becoming a Software Developer or Linux System
-                    Administrator. My mission is to apply the skills I’ve gained in the Navy, my academic studies, and
-                    my ongoing technical education to create secure,
-                    innovative solutions that meet the demands of modern IT environments while continually advancing my
-                    expertise in technology.
-                </p>
-            </div>
-        </section>
-
         <!-- Certifications/Bootcamps Section -->
-        <section class="row">
+        <section class="row content-dif">
             <div class="col-12 col-lg-6">
                 <h3>Certifications</h3>
                 <p class="d-none d-sm-block">
@@ -117,11 +107,51 @@
             </div>
         </section>
 
+        <!-- Mission Section -->
+        <section class="row content-dif">
+            <div class="col-sm-6">
+                <h3>My Mission</h3>
+                <p class="d-none d-sm-block">
+                    I am an active-duty US Navy servicemember with a solid foundation in electrical, technical, and
+                    security systems. Having recently completed my
+                    Associate of Applied Science (AAS) in Information Technology at Del Mar College, I have shifted my
+                    career focus toward becoming a Software Developer or Linux System
+                    Administrator. My mission is to apply the skills I’ve gained in the Navy, my academic studies, and
+                    my ongoing technical education to create secure,
+                    innovative solutions that meet the demands of modern IT environments while continually advancing my
+                    expertise in technology.
+                </p>
+            </div>
+            <div class="col-sm-6">
+                <div class="card border-secondary">
+                    <h3 class="card-header bg-secondary text-white">Military Carreer</h3>
+                    <div class="card-body">
+                        <dl class="row">
+                            <dt class="col-6">Army Start</dt>
+                            <dd class="col-6">October 2009</dd>
+                            <dt class="col-6">Deployments</dt>
+                            <dd class="col-6">1</dd>
+                            <dt class="col-6">Navy Start</dt>
+                            <dd class="col-6">January 2019</dd>
+                            <dt class="col-6">Deployments</dt>
+                            <dd class="col-6">3</dd>
+                        </dl>
+                        <blockquote class="blockquote">
+                            <q>Motion equals life; without it, there is stagnation.</q>
+                        </blockquote>
+                        <figcaption class="blockquote-footer">
+                            Aristotle <cite>"Motion equals life" - Aristotle's Philosophy</cite>
+                        </figcaption>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Key/Technical Experiences Section -->
-        <section class="row">
+        <section class="row content-dif" hidden>
             <div class="col-12 col-lg-6">
                 <h3>Key Experiences</h3>
-                <p>
+                <p class="d-none d-sm-block">
                     During my time in the Navy, I developed a diverse technical background. I spent five years working
                     in Visual Landing Aids (VLA), where I managed systems
                     like the Integrated Launch and Recovery Television Surveillance System (ILARTS) and the Improved
@@ -136,7 +166,7 @@
             </div>
             <div class="col-12 col-lg-6">
                 <h3>Technical Skills</h3>
-                <p>
+                <p class="d-none d-sm-block">
                     My technical skillset includes a strong grasp of programming languages such as HTML5, CSS,
                     JavaScript, Python, and C/C++. I am experienced in working with
                     frameworks and tools like Node.js, React, and Bootstrap, which have allowed me to develop both web
@@ -146,6 +176,55 @@
                     reflect my ability to adapt to various technologies and tools to meet the demands of dynamic IT
                     roles.
                 </p>
+            </div>
+        </section>
+
+        <section class="row content-dif">
+            <div>
+                <h2>Timeline</h2>
+                <div class="table-responsive">
+                    <table class="table table-striped table-secondary table-bordered">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Timeline</th>
+                                <th>2020</th>
+                                <th>2021</th>
+                                <th>2022</th>
+                                <th>2023</th>
+                                <th>2024</th>
+                                <th>2025</th>
+                                <th>2026</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>Deployment</th>
+                                <td>8 Months</td>
+                                <td>7 Months</td>
+                                <td>N/A</td>
+                                <td>4 Months</td>
+                                <td class="span-cell" colspan="3">Shore Duty</td>
+                            </tr>
+                            <tr class="table-secondary text-black border-black">
+                                <th>Coding Bootcamps</th>
+                                <td>Linux (Self study)</td>
+                                <td>C (Self study)</td>
+                                <td class="span-cell" colspan="2">CompTIA (Self study)</td>
+                                <td>HTML/CSS/JavaScript</td>
+                                <td>Python/SQL</td>
+                                <td>C/C++ & Unreal Engine 5</td>
+                            </tr>
+                            <tr>
+                                <th>College Courses</th>
+                                <td class="span-cell" colspan="2">none</td>
+                                <td>25 credits at <br> Tide Water Community College</td>
+                                <td>none</td>
+                                <td>6 credits at <br> Delmar College</td>
+                                <td class="span-cell" colspan="2">48 credits at <br> Delmar College</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </section>
 
@@ -161,20 +240,28 @@
                                     class="fa-solid fa-house fa-lg"></i> Home</a></li>
                         <li class="nav-item"><a class="nav-link active" href="#"><i class="fa-solid fa-info fa-lg"></i>
                                 About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="sites.html"><i class="fa-solid fa-list fa-lg"></i>
+                        <li class="nav-item"><a class="nav-link" href="sites.html"><i
+                                    class="fa-solid fa-list fa-lg"></i>
                                 Sites</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html"><i class="fa-solid fa-address-card fa-lg"></i>
+                        <li class="nav-item"><a class="nav-link" href="contact.html"><i
+                                    class="fa-solid fa-address-card fa-lg"></i>
                                 Contact</a></li>
                     </ul>
                 </div>
                 <div class="col-6 col-sm-5 text-center">
                     <h5>Social</h5>
-                    <a style="color: purple" href="http://instagram.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram fa-xl"></i></a>
-					<a style="color: blue" href="http://facebook.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook fa-xl"></i></a>
-					<a style="color: red" href="http://youtube.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube fa-xl"></i></a>
-					<a style="color: darkviolet" href="http://discord.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-discord fa-xl"></i></a>
-					<a style="color: green" href="http://discord.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-slack fa-xl"></i></a>
-					<a style="color: black" href="http://discord.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter fa-xl"></i></a>
+                    <a style="color: purple" href="http://instagram.com/" target="_blank" rel="noopener noreferrer"><i
+                            class="fa-brands fa-instagram fa-xl"></i></a>
+                    <a style="color: blue" href="http://facebook.com/" target="_blank" rel="noopener noreferrer"><i
+                            class="fa-brands fa-facebook fa-xl"></i></a>
+                    <a style="color: red" href="http://youtube.com/" target="_blank" rel="noopener noreferrer"><i
+                            class="fa-brands fa-youtube fa-xl"></i></a>
+                    <a style="color: darkviolet" href="http://discord.com/" target="_blank" rel="noopener noreferrer"><i
+                            class="fa-brands fa-discord fa-xl"></i></a>
+                    <a style="color: green" href="http://discord.com/" target="_blank" rel="noopener noreferrer"><i
+                            class="fa-brands fa-slack fa-xl"></i></a>
+                    <a style="color: black" href="http://discord.com/" target="_blank" rel="noopener noreferrer"><i
+                            class="fa-brands fa-twitter fa-xl"></i></a>
                 </div>
                 <div class="col-sm-4 text-center">
                     <i class="fa fa-phone fa-lg text-info"></i> 123-558-6969 <br>
@@ -184,8 +271,8 @@
         </div>
     </footer>
     <!-- Script -->
-	<script src="script/darkmode.js"></script>
-	<script src="script/script.js"></script>
+    <script src="script/darkmode.js"></script>
+    <script src="script/script.js"></script>
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
