@@ -41,6 +41,32 @@ header h2 {
 }
 
 /* Content Sections */
+
+.nav-tabs  {
+    background-color: transparent; 
+    color: black; 
+    border-bottom: none; 
+}
+
+.nav-link {
+    border-top: none;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: transparent;
+    color: purple; 
+    border-bottom: none; 
+}
+
+h3 {
+    color: black !important;
+}
+
+.tab-content {
+    border-top: none;
+    padding: 10px;
+}
+
 .content,
 .content-mid,
 .content-dif {
@@ -108,12 +134,12 @@ footer a:hover i
 
 /* Dark Mode Button Styles */
 body.dark-mode .btn {
-    background-color: #343a40; /* Dark background for the button */
-    color: white; /* White text */
-    border: 1px solid #555; /* Dark border */
+    background-color: #343a40; 
+    color: white; 
+    border: 1px solid #555; 
 }
 
 body.dark-mode .btn:hover {
-    background-color: #495057; /* Lighter dark background on hover */
-    border-color: #888; /* Lighter border on hover */
+    background-color: #495057; 
+    border-color: #888; 
 }
