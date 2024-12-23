@@ -93,3 +93,27 @@ footer {
 .footer-light {
     background-image: linear-gradient(to top, #baacfa, #f4f2fb);
 }
+
+footer .nav-link i,
+footer a i {
+    transition: transform 0.3s ease;
+}
+
+footer .nav-link:hover i,
+footer a:hover,
+footer a:hover i
+ {
+    transform: scale(1.2);
+}
+
+/* Dark Mode Button Styles */
+body.dark-mode .btn {
+    background-color: #343a40; /* Dark background for the button */
+    color: white; /* White text */
+    border: 1px solid #555; /* Dark border */
+}
+
+body.dark-mode .btn:hover {
+    background-color: #495057; /* Lighter dark background on hover */
+    border-color: #888; /* Lighter border on hover */
+}

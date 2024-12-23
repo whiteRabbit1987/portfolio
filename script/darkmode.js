@@ -44,6 +44,12 @@ function applyDarkMode() {
     updateStyles('.table-dark', { backgroundColor: "#1a1a2e !important" });
     updateStyles('.table-striped tbody tr:nth-of-type(odd)', { backgroundColor: "#3a3456" });
     updateStyles('.table', { borderColor: "#6c757d" });
+
+    // Dark mode styles for the button
+    const btn = document.querySelector('.btn');
+    if (btn) {
+        btn.classList.add('btn-dark');
+    }
 }
 
 // Helper function to apply light mode
@@ -81,6 +87,12 @@ function applyLightMode() {
     resetStyles('.table-secondary');
     resetStyles('.table-dark');
     resetStyles('.table-striped tbody tr:nth-of-type(odd)');
+
+    // Reset button styles
+    const btn = document.querySelector('.btn');
+    if (btn) {
+        btn.classList.remove('btn-dark');
+    }
 }
 
 // Helper to update styles
