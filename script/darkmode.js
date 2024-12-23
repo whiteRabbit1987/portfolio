@@ -23,16 +23,16 @@ function applyDarkMode() {
 
     // Styles for military career card
     updateStyles('.card.border-secondary', { backgroundColor: "#2e2b47", borderColor: "#6c757d" });
-    updateStyles('.card-header.bg-secondary', { backgroundColor: "#4a3f83 !important" });
+    updateStyles('.card-header.bg-secondary', { backgroundColor: "#4a3f83" });
     updateStyles('.card-body', { color: "white" });
 
     // Updated styles for quote card using custom class
     updateStyles('.quote-card', { 
-        backgroundColor: "#2e2b47 !important", 
+        backgroundColor: "#2e2b47", 
         color: "white" 
     });
     updateStyles('.quote-card .card-body', { 
-        backgroundColor: "#2e2b47 !important", 
+        backgroundColor: "#2e2b47", 
         color: "white" 
     });
     updateStyles('.blockquote', { color: "white" });
@@ -41,7 +41,7 @@ function applyDarkMode() {
 
     // Styles for timeline table
     updateStyles('.table-secondary', { backgroundColor: "#2e2b47", color: "white" });
-    updateStyles('.table-dark', { backgroundColor: "#1a1a2e !important" });
+    updateStyles('.table-dark', { backgroundColor: "#1a1a2e" });
     updateStyles('.table-striped tbody tr:nth-of-type(odd)', { backgroundColor: "#3a3456" });
     updateStyles('.table', { borderColor: "#6c757d" });
 
@@ -50,6 +50,12 @@ function applyDarkMode() {
     if (btn) {
         btn.classList.add('btn-dark');
     }
+
+    // Dark mode styles for the accordion-body
+    updateStyles('.accordion-body', { 
+        backgroundColor: "rgba(71, 63, 131)", 
+        color: "white" 
+    });
 }
 
 // Helper function to apply light mode
@@ -93,6 +99,9 @@ function applyLightMode() {
     if (btn) {
         btn.classList.remove('btn-dark');
     }
+
+    // Reset light mode styles for accordion-body
+    resetStyles('.accordion-body');
 }
 
 // Helper to update styles
@@ -131,6 +140,8 @@ function resetStyles(selector, useHoverEffect = false) {
 // Check saved theme preference and apply on load
 if (localStorage.getItem("theme") === "dark") {
     applyDarkMode();
+} else {
+    applyLightMode(); // Apply light mode if no preference is found
 }
 
 // Toggle theme on button click

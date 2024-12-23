@@ -1,16 +1,28 @@
+/* General Body Styles */
 body {
     background-color: #f4f2fb;
     font-family: "Silkscreen", 'Courier New', Courier, monospace;
     transition: background-color 0.3s, color 0.3s;
 }
 
-/* Header Styles */
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+/* Header */
 header {
     color: rgb(0, 0, 0);
     padding: 10px;
     text-align: center;
 }
 
+body.dark-mode header {
+    color: #e0e0e0;
+}
+
+/* Header Light */
 .header-light {
     background-image: linear-gradient(#baacfa, #f4f2fb);
     color: rgb(0, 0, 0);
@@ -21,6 +33,7 @@ header {
     max-height: auto;
 }
 
+/* Title & Subtitle */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Arial', sans-serif;
 }
@@ -40,26 +53,47 @@ header h2 {
     border-radius: 20px;
 }
 
-/* Content Sections */
-
-.nav-tabs  {
-    background-color: transparent; 
-    color: black; 
-    border-bottom: none; 
+body.dark-mode .navbar .nav-item:hover {
+    background-color: #333;
+    color: #e0e0e0;
 }
 
-.nav-link {
-    border-top: none;
+/* Accordion Content */
+.accordion-button {
+    background-color: #d3d3d3;
+}
+
+body.dark-mode .accordion-button {
+    background-color: #333;
+    color: #e0e0e0;
+    border: none;
+}
+
+.nav-tabs {
+    background-color: transparent;
+    color: black;
+    border-bottom: none;
+}
+
+body.dark-mode .nav-tabs {
+    color: #e0e0e0;
 }
 
 .nav-tabs .nav-link.active {
     background-color: transparent;
-    color: purple; 
-    border-bottom: none; 
+    color: purple;
+}
+
+body.dark-mode .nav-tabs .nav-link.active {
+    color: #d4a0ff;
 }
 
 h3 {
     color: black !important;
+}
+
+body.dark-mode h3 {
+    color: #e0e0e0 !important;
 }
 
 .tab-content {
@@ -74,13 +108,18 @@ h3 {
     margin: 20px;
 }
 
-
 .content:hover {
     border-bottom: 1px solid;
     border-left: 1px solid;
     border-radius: 15px;
     background-image: linear-gradient(to bottom left, #baacfa, #f4f2fb, #f4f2fb);
     cursor: pointer;
+}
+
+body.dark-mode .content:hover {
+    border-color: #333;
+    background-color: #4a3f83;
+    background-image: none;
 }
 
 .content-mid:hover {
@@ -92,6 +131,11 @@ h3 {
     cursor: pointer;
 }
 
+body.dark-mode .content-mid:hover {
+    border-color: #444;
+    background-image: linear-gradient(to bottom right, #444, #222, #222);
+}
+
 /* Lists */
 ul {
     margin: 0 35px;
@@ -101,14 +145,27 @@ li:hover {
     background-color: lightgray;
 }
 
+body.dark-mode li:hover {
+    background-color: #444;
+    color: #e0e0e0;
+}
+
 /* General Styles */
 p {
     font-family: 'Courier New', Courier, monospace;
 }
 
+body.dark-mode p {
+    color: #e0e0e0;
+}
+
 /* Miscellaneous */
 .about-me {
     text-align: center;
+}
+
+body.dark-mode .about-me {
+    color: #e0e0e0;
 }
 
 /* Footer */
@@ -120,6 +177,10 @@ footer {
     background-image: linear-gradient(to top, #baacfa, #f4f2fb);
 }
 
+body.dark-mode footer {
+    background-image: linear-gradient(to top, #333, #444);
+}
+
 footer .nav-link i,
 footer a i {
     transition: transform 0.3s ease;
@@ -127,19 +188,102 @@ footer a i {
 
 footer .nav-link:hover i,
 footer a:hover,
-footer a:hover i
- {
+footer a:hover i {
+    transform: scale(1.2);
+}
+
+body.dark-mode footer .nav-link:hover i,
+body.dark-mode footer a:hover,
+body.dark-mode footer a:hover i {
     transform: scale(1.2);
 }
 
 /* Dark Mode Button Styles */
 body.dark-mode .btn {
-    background-color: #343a40; 
-    color: white; 
-    border: 1px solid #555; 
+    background-color: #343a40;
+    color: white;
+    border: 1px solid #555;
 }
 
 body.dark-mode .btn:hover {
-    background-color: #495057; 
-    border-color: #888; 
+    background-color: #495057;
+    border-color: #888;
+}
+
+/* Card Styles */
+.card.border-secondary {
+    background-color: #ffffff; /* Light mode background */
+    border-color: #6c757d; /* Border color */
+}
+
+body.dark-mode .card.border-secondary {
+    background-color: #2e2b47;
+    border-color: #6c757d;
+}
+
+.card-header.bg-secondary {
+    background-color: #f4f2fb; /* Light mode header */
+}
+
+body.dark-mode .card-header.bg-secondary {
+    background-color: #4a3f83;
+}
+
+.card-body {
+    color: black; /* Default text color */
+}
+
+body.dark-mode .card-body {
+    color: white;
+}
+
+/* Button */
+.btn-dark {
+    background-color: #333;
+    color: white;
+}
+
+/* List Items */
+.list-group-item {
+    background-color: #f4f2fb;
+}
+
+body.dark-mode .list-group-item {
+    background-color: #444;
+    color: white;
+}
+
+/* Quote Card */
+.quote-card {
+    background-color: #2e2b47;
+    color: white;
+}
+
+.quote-card .card-body {
+    background-color: #2e2b47;
+    color: white;
+}
+
+/* Blockquote */
+.blockquote {
+    color: white;
+}
+
+.blockquote-footer {
+    color: #adb5bd;
+}
+
+.blockquote cite {
+    color: #6c757d;
+}
+
+/* Timeline Table */
+.table-secondary {
+    background-color: #2e2b47;
+    color: white;
+}
+
+.table-dark {
+    background-color: #333;
+    color: white;
 }
