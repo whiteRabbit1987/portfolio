@@ -39,9 +39,6 @@
 					<h1>Software Developer Portfolio</h1>
 					<h2>Abbott Phillip S</h2>
 				</div>
-				<div class="col col-md-4 col-xl-2 mt-4">
-					<button  type="submit" class="btn btn-secondary"><a href="#contactRequestForm" class="text-white text-nowarp">Request Contact</a></button>
-				</div>
 			</div>
 		</div>
 
@@ -65,6 +62,11 @@
 							<i class="fa-solid fa-right-from-bracket"></i> Login
 						</a>
 					</span>
+					<span class="navbar-text ms-3">
+						<a role="button" data-bs-toggle="modal" data-bs-target="#contactRequest">
+							<i class="fa-solid fa-envelope"></i> Contact Me
+						</a>
+					</span>
 				</div>
 			</div>
 		</nav>
@@ -72,8 +74,8 @@
 		<div class="modal fade" id="login">
 			<div class="modal-dialog">
 				<div class="modal-content">
-					<div class="modal-header">
-						<h3 class="modal-title">Login</h3>
+					<div class="modal-header bg-secondary">
+						<h3 class="modal-title text-white">Login</h3>
 						<button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
 					</div>
 					<div class="modal-body">
@@ -82,11 +84,13 @@
 								<div class="row">
 									<div class="mb-3 col-12">
 										<label for="loginEmail" class="sr-only">Email</label>
-										<input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="email">
+										<input type="email" class="form-control form-control-sm" id="loginEmail"
+											placeholder="email">
 									</div>
 									<div class="mb-3 col-12">
 										<label for="loginPassword" class="sr-only">Password</label>
-										<input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
+										<input type="password" class="form-control form-control-sm" id="loginPassword"
+											placeholder="Password">
 									</div>
 									<div class="col text-start">
 										<div class="form-check mb-3">
@@ -101,6 +105,44 @@
 											Close
 										</button>
 										<button type="button" class="btn btn-info">Save</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Contact Request section -->
+		<div class="modal fade" id="contactRequest">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header bg-secondary">
+						<h3 class="modal-title text-white">Request Contact</h3>
+						<button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<div class="container-fluid">
+							<form>
+								<div class="row">
+									<div class="mb-3 col-12">
+										<label for="role sr-only">Choose</label>
+										<select name="role" id="role" class="form-control">
+											<option value="">Select your role</option>
+											<option value="1">Developer</option>
+											<option value="2">Designer</option>
+											<option value="3">Tester</option>
+										</select>
+									</div>
+									<div class="mb-3 col-12">
+										<label for="date">Date</label>
+										<input type="date" id="date" name="date" class="form-control">
+									</div>
+									<div class="row">
+										<div class="col-12">
+											<button type="submit" class="btn btn-secondary">Search</button>
+										</div>
 									</div>
 								</div>
 							</form>
@@ -178,45 +220,6 @@
 			<div class="col-sm-4 col-md-3">
 				<div class="d-flex justify-content-center">
 					<img src="images/Linux Terminal.png" class="ms-3 img-thumbnail">
-				</div>
-			</div>
-		</section>
-
-		<!-- Contact Request section -->
-		<section class="row content-dif">
-			<div class="col col-sm-9 mx-auto">
-				<div class="card border-secondary">
-					<h3 class="card-header bg-secondary text-white">Request Contact</h3>
-					<div class="card-body">
-						<form id="contactRequestForm">
-							<div class="row">
-							  <div class="col-12 col-sm-4">
-								<label for="role">Choose</label>
-							  </div>
-							  <div class="col-12 col-sm-8">
-								<select name="role" id="role" class="form-control">
-								  <option value="">Select your role</option>
-								  <option value="1">Developer</option>
-								  <option value="2">Designer</option>
-								  <option value="3">Tester</option>
-								</select>
-							  </div>
-							</div>
-							<div class="row">
-							  <div class="col-12 col-sm-4">
-								<label for="date">Date</label>
-							  </div>
-							  <div class="col-12 col-sm-8">
-								<input type="date" id="date" name="date" class="form-control">
-							  </div>
-							</div>
-							<div class="row">
-							  <div class="col-12">
-								<button type="submit" class="btn btn-secondary">Search</button>
-							  </div>
-							</div>
-						  </form>
-					</div>
 				</div>
 			</div>
 		</section>
