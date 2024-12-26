@@ -58,6 +58,26 @@ body.dark-mode .navbar .nav-item:hover {
     color: #e0e0e0;
 }
 
+/* Carousel Content */
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-caption h3 {
+    color: white !important;
+}
+
+.carousel {
+    border: solid #baacfa;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    width: 100%;
+    height: 400px;
+}
+
 /* Accordion Content */
 .accordion-button {
     background-color: #d3d3d3;
