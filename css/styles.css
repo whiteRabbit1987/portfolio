@@ -75,7 +75,7 @@ body.dark-mode .navbar .nav-item:hover {
 .carousel-item img {
     object-fit: cover;
     width: 100%;
-    height: 400px;
+    height: 325px;
 }
 
 /* Accordion Content */
