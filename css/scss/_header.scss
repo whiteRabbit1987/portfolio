@@ -1,0 +1,26 @@
+/* Header */
+header {
+    color: $color-light-text;
+    padding: 10px;
+    text-align: center;
+
+    h2 {
+        font-size: small;
+        color: blue;
+    }
+
+    &.dark-mode {
+        color: $color-dark-text;
+    }
+}
+
+/* Header Light */
+.header-light {
+    background-image: linear-gradient($color-gradient-start, $color-light-bg);
+    color: $color-light-text;
+
+    .bunny {
+        max-width: 25%;
+        max-height: auto;
+    }
+}

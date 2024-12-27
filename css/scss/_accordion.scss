@@ -1,0 +1,10 @@
+/* Accordion */
+.accordion-button {
+    background-color: #d3d3d3;
+
+    body.dark-mode & {
+        background-color: $color-hover-dark;
+        color: $color-dark-text;
+        border: none;
+    }
+}

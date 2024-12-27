@@ -13,7 +13,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet" />
 
 	<!-- Custom Styles -->
-	<link rel="stylesheet" href="css/styles.scss">
+	<link rel="stylesheet" href="css/scss/styles.scss">
 
 	<!-- Font Awesome -->
 	<link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/fontawesome.css"/>
@@ -73,8 +73,8 @@
 		<div class="modal fade" id="login">
 			<div class="modal-dialog">
 				<div class="modal-content">
-					<div class="modal-header bg-secondary">
-						<h3 class="modal-title text-white">Login</h3>
+					<div class="modal-header">
+						<h3 class="modal-title">Login</h3>
 						<button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
 					</div>
 					<div class="modal-body">
@@ -103,7 +103,7 @@
 										<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
 											Close
 										</button>
-										<button type="button" class="btn btn-info">Save</button>
+										<button type="button" class="btn" id="loginBtn">Save</button>
 									</div>
 								</div>
 							</form>
@@ -117,8 +117,8 @@
 		<div class="modal fade" id="contactRequest">
 			<div class="modal-dialog">
 				<div class="modal-content">
-					<div class="modal-header bg-secondary">
-						<h3 class="modal-title text-white">Request Contact</h3>
+					<div class="modal-header">
+						<h3 class="modal-title">Request Contact</h3>
 						<button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
 					</div>
 					<div class="modal-body">
@@ -140,7 +140,7 @@
 									</div>
 									<div class="row">
 										<div class="col-12">
-											<button type="submit" class="btn btn-secondary">Search</button>
+											<button type="submit" class="btn" id="contactBtn">Search</button>
 										</div>
 									</div>
 								</div>

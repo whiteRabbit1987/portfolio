@@ -1,0 +1,15 @@
+/* Lists */
+ul {
+    margin: 0 35px;
+
+    li {
+        &:hover {
+            background-color: $color-hover-light;
+
+            body.dark-mode & {
+                background-color: #444;
+                color: $color-dark-text;
+            }
+        }
+    }
+}

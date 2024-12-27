@@ -1,0 +1,41 @@
+/* Buttons */
+.btn {
+    &.dark {
+        background-color: $color-hover-dark;
+        color: white;
+        border: 1px solid #555;
+
+        &:hover {
+            background-color: #495057;
+            border-color: #888;
+        }
+    }
+}
+
+/* Button Styles */
+#loginBtn,
+#contactBtn {
+    // Default (Light Mode)
+    background-color: $color-gradient-start;
+    color: black;
+    border: 1px solid black;
+
+    &:hover {
+        background-color: darken($color-gradient-start, 10%);
+        color: white;
+        border-color: black;
+    }
+
+    // Dark Mode
+    body.dark-mode & {
+        background-color: $color-dark-bg;
+        color: white;
+        border: 1px solid white;
+
+        &:hover {
+            background-color: lighten($color-dark-bg, 10%);
+            color: $color-gradient-start;
+            border-color: $color-gradient-start;
+        }
+    }
+}

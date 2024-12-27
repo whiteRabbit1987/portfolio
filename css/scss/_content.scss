@@ -1,0 +1,41 @@
+/* Content */
+.content,
+.content-mid,
+.content-dif {
+    padding: 20px;
+    margin: 20px;
+}
+
+// Hover styles for .content
+.content {
+    &:hover {
+        border-bottom: 1px solid;
+        border-left: 1px solid;
+        border-radius: 15px;
+        background-image: linear-gradient(to bottom left, #baacfa, #f4f2fb, #f4f2fb);
+        cursor: pointer;
+
+        body.dark-mode & {
+            border-color: #333;
+            background-color: #4a3f83;
+            background-image: none;
+        }
+    }
+}
+
+// Hover styles for .content-mid
+.content-mid {
+    &:hover {
+        border-left: none;
+        border-right: 1px solid;
+        border-bottom: 1px solid;
+        border-radius: 15px;
+        background-image: linear-gradient(to bottom right, #baacfa, #f4f2fb, #f4f2fb);
+        cursor: pointer;
+
+        body.dark-mode & {
+            border-color: #444;
+            background-image: linear-gradient(to bottom right, #444, #222, #222);
+        }
+    }
+}

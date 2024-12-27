@@ -1,0 +1,13 @@
+/* Modal Styles */
+#contactRequest,
+#login {
+    .modal-header {
+        background-color: $color-gradient-start;
+        color: black;
+
+        body.dark-mode & {
+            background-color: $color-dark-main;
+            color: white;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+/* Tabs */
+.nav-tabs {
+    background-color: transparent;
+    color: $color-light-text;
+    border-bottom: none;
+
+    .nav-link.active {
+        background-color: transparent;
+        color: purple;
+
+        body.dark-mode & {
+            color: #d4a0ff;
+        }
+    }
+}

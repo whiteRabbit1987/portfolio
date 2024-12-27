@@ -1,0 +1,8 @@
+/* Miscellaneous */
+.about-me {
+    text-align: center;
+
+    body.dark-mode & {
+        color: $color-dark-text;
+    }
+}

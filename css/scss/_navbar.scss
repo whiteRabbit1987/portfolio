@@ -1,0 +1,14 @@
+/* Navbar */
+.navbar {
+    .nav-item {
+        &:hover {
+            background-color: $color-hover-light;
+            border-radius: 20px;
+
+            body.dark-mode & {
+                background-color: $color-hover-dark;
+                color: $color-dark-text;
+            }
+        }
+    }
+}
