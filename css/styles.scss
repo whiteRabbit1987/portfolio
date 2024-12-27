@@ -1,0 +1,260 @@
+/* Variables */
+$font-body: "Silkscreen", 'Courier New', Courier, monospace;
+$font-heading: 'Arial', sans-serif;
+
+$color-light-bg: #f4f2fb;
+$color-light-text: rgb(0, 0, 0);
+$color-dark-bg: #121212;
+$color-dark-text: #e0e0e0;
+
+$color-hover-light: lightgray;
+$color-hover-dark: #333;
+$color-gradient-start: #baacfa;
+$color-gradient-end: #f4f2fb;
+
+/* General Body Styles */
+body {
+  background-color: $color-light-bg;
+  font-family: $font-body;
+  transition: background-color 0.3s, color 0.3s;
+
+  &.dark-mode {
+    background-color: $color-dark-bg;
+    color: $color-dark-text;
+  }
+}
+
+/* Header */
+header {
+  color: $color-light-text;
+  padding: 10px;
+  text-align: center;
+
+  h2 {
+    font-size: small;
+    color: blue;
+  }
+
+  &.dark-mode {
+    color: $color-dark-text;
+  }
+}
+
+/* Header Light */
+.header-light {
+  background-image: linear-gradient($color-gradient-start, $color-light-bg);
+  color: $color-light-text;
+
+  .bunny {
+    max-width: 25%;
+    max-height: auto;
+  }
+}
+
+/* Navbar */
+.navbar {
+  .nav-item {
+    &:hover {
+      background-color: $color-hover-light;
+      border-radius: 20px;
+
+      body.dark-mode & {
+        background-color: $color-hover-dark;
+        color: $color-dark-text;
+      }
+    }
+  }
+}
+
+/* Carousel */
+.carousel {
+  border: solid $color-gradient-start;
+
+  .carousel-item img {
+    object-fit: cover;
+    width: 100%;
+    height: 325px;
+  }
+
+  .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+
+    h3 {
+      color: white !important;
+    }
+  }
+}
+
+/* Accordion */
+.accordion-button {
+  background-color: #d3d3d3;
+
+  body.dark-mode & {
+    background-color: $color-hover-dark;
+    color: $color-dark-text;
+    border: none;
+  }
+}
+
+/* Tabs */
+.nav-tabs {
+  background-color: transparent;
+  color: $color-light-text;
+  border-bottom: none;
+
+  .nav-link.active {
+    background-color: transparent;
+    color: purple;
+
+    body.dark-mode & {
+      color: #d4a0ff;
+    }
+  }
+}
+
+/* Content */
+.content, .content-mid, .content-dif {
+  padding: 20px;
+  margin: 20px;
+
+  &:hover {
+    border: 1px solid;
+    border-radius: 15px;
+    background-image: linear-gradient(to bottom left, $color-gradient-start, $color-light-bg, $color-light-bg);
+    cursor: pointer;
+
+    body.dark-mode & {
+      border-color: $color-hover-dark;
+      background-color: #4a3f83;
+      background-image: none;
+    }
+  }
+}
+
+.content-mid {
+  &:hover {
+    border-left: none;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    background-image: linear-gradient(to bottom right, $color-gradient-start, $color-light-bg, $color-light-bg);
+
+    body.dark-mode & {
+      border-color: #444;
+      background-image: linear-gradient(to bottom right, #444, #222, #222);
+    }
+  }
+}
+
+/* Lists */
+ul {
+  margin: 0 35px;
+
+  li {
+    &:hover {
+      background-color: $color-hover-light;
+
+      body.dark-mode & {
+        background-color: #444;
+        color: $color-dark-text;
+      }
+    }
+  }
+}
+
+/* Footer */
+footer {
+  padding: 25px 0;
+
+  &.footer-light {
+    background-image: linear-gradient(to top, $color-gradient-start, $color-light-bg);
+  }
+
+  body.dark-mode & {
+    background-image: linear-gradient(to top, $color-hover-dark, #444);
+
+    .nav-link i,
+    a i {
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+
+/* Buttons */
+.btn {
+  &.dark {
+    background-color: $color-hover-dark;
+    color: white;
+    border: 1px solid #555;
+
+    &:hover {
+      background-color: #495057;
+      border-color: #888;
+    }
+  }
+}
+
+/* Cards */
+.card {
+  &.border-secondary {
+    background-color: $color-light-bg;
+    border-color: #6c757d;
+
+    body.dark-mode & {
+      background-color: #2e2b47;
+      border-color: #6c757d;
+    }
+
+    .card-header.bg-secondary {
+      background-color: $color-light-bg;
+
+      body.dark-mode & {
+        background-color: #4a3f83;
+      }
+    }
+
+    .card-body {
+      color: $color-light-text;
+
+      body.dark-mode & {
+        color: $color-dark-text;
+      }
+    }
+  }
+}
+
+/* Miscellaneous */
+p {
+  font-family: 'Courier New', Courier, monospace;
+
+  body.dark-mode & {
+    color: $color-dark-text;
+  }
+}
+
+.about-me {
+  text-align: center;
+
+  body.dark-mode & {
+    color: $color-dark-text;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-heading;
+}
+
+h2, h3 {
+  color: blue;
+}
+
+h3 {
+  color: black !important;
+
+  body.dark-mode & {
+    color: $color-dark-text !important;
+  }
+}
