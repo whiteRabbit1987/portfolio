@@ -56,9 +56,52 @@
                         <li class="nav-item"><a class="nav-link active" href="#">Sites</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                     </ul>
+                    <span class="navbar-text ms-auto">
+						<a role="button" data-bs-toggle="modal" data-bs-target="#discordModal">
+							<i class="fa-brands fa-discord"></i> Request Invite
+						</a>
+					</span>
                 </div>
             </div>
         </nav>
+
+        <!-- Discord Modal -->
+        <div class="modal fade" id="discordModal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h3 class="modal-title">Request Discrod Invite</h3>
+						<button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<div class="container-fluid">
+							<form>
+								<div class="row">
+									<div class="mb-3 col-12">
+										<label for="fullName" class="sr-only">Name</label>
+										<input type="text" class="form-control form-control-sm" id="fullName"
+											placeholder="Full Name">
+									</div>
+                                    <div class="mb-3 col-12">
+										<label for="loginEmail" class="sr-only">Email</label>
+										<input type="email" class="form-control form-control-sm" id="loginEmail"
+											placeholder="email">
+									</div>
+								</div>
+								<div class="row">
+									<div class="col text-center">
+										<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+											Close
+										</button>
+										<button type="button submit" class="btn" id="discord-btn">Send</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
         <!-- Dark/Light Mode Toggle Icon (Top Right Corner) -->
         <button id="theme-toggle" class="btn btn-outline-secondary position-absolute top-0 end-0 m-3">
@@ -143,6 +186,23 @@
                 </p>
             </div>
         </div>
+
+        <!-- Discord Section -->
+        <section class="row content-dif align-items-start discord-section mb-3">
+            <div class="col-sm-4 col-md-3 order-sm-first">
+                <h2 class="discord-title text-sm-end">Join my Discord Server</h2>
+            </div>
+            <div class="col ms-lg-5">
+                <img class="img-thumbnail img-fluid mb-3 " src="images/discrod.jpg" alt="Discord Logo Picture">
+                <button class="discord-btn mt-3" type="button" data-bs-toggle="modal" data-bs-target="#discordModal">Get Invited</button>
+            </div>
+            <div class="col">
+                <h3>Lets Work Together</h3>
+                <p>Join our Discord community, where developers and IT enthusiasts come together! Explore channels tailored to software development in various fields,
+                    and get support in Information Technology.
+                    There's something for everyone—connect, learn, and grow with us!</p>
+            </div>
+        </section>
 
         <!-- Projects Section -->
         <div class="row" hidden>

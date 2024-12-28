@@ -2,20 +2,20 @@
 footer {
     padding: 25px 0;
 
+    .nav-link i,
+    a i {
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+
     &.footer-light {
         background-image: linear-gradient(to top, $color-gradient-start, $color-light-bg);
     }
 
     body.dark-mode & {
         background-image: linear-gradient(to top, $color-hover-dark, #444);
-
-        .nav-link i,
-        a i {
-            transition: transform 0.3s ease;
-
-            &:hover {
-                transform: scale(1.2);
-            }
-        }
     }
 }

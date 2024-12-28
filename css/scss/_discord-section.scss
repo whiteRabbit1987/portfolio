@@ -1,0 +1,51 @@
+@mixin discord-section() {
+    border: solid 1px;
+    border-radius: 15px;
+    border-color: #333;
+
+    body.dark-mode & {
+        border-color: $color-gradient-start;
+    }
+}
+
+.discord-section {
+    @include discord-section;
+}
+
+/* Define the Button Styles */
+%discord-btn {
+    background: $color-gradient-start;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+    width: 100%;
+    border: 1px solid transparent;
+
+    &:hover {
+        background: $color-dark-main;
+        color: white; 
+        border-color: $color-gradient-start;
+
+    }
+}
+
+/* Extend for Light Mode */
+.discord-btn {
+    @extend %discord-btn;
+
+    // Light Mode Adjustments
+    body:not(.dark-mode) & {
+        background: $color-gradient-start;
+        color: black;
+        border: 1px solid black;
+
+        &:hover {
+            background: black; /* Reverse background */
+            color: $color-gradient-start; /* Reverse text color */
+            border-color: $color-gradient-start;
+        }
+    }
+}
